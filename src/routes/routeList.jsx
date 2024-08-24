@@ -1,4 +1,5 @@
 import Home from "../pages/Home"
+import Deposit from "../pages/Deposit"
 
 export const routeList = [
 	{
@@ -8,5 +9,9 @@ export const routeList = [
 	{
 		path: "/home",
 		element: <Home />
+	},
+	{
+		path: "/deposit",
+		element: <Deposit />
 	},
 ];

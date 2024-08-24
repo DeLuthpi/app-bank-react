@@ -21,6 +21,80 @@ a {
 	text-decoration: none;
 }
 
+input {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.form-control {
+	border-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	border-left-width: 1px;
+}
+
+.form-control {
+	width: 30%;
+	padding: 0.5rem 0.75rem;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #d2d6da;
+	appearance: none;
+	border-radius: 0.5rem;
+	transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.form-control {
+		transition: none;
+	}
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #00cccc;
+	outline: 0;
+	box-shadow: 0 0 0 2px #50c878;
+}
+
+.form-control::-webkit-date-and-time-value {
+	height: 1.4rem;
+}
+
+.form-control::placeholder {
+	color: #adb5bd;
+	opacity: 1;
+}
+
+.btn-submit {
+	color: #fff;
+	font-weight: 500;
+	border-color: #50c878;
+	background-color: #50c878;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.btn-submit:hover {
+	color: #fff;
+	background-color: #00693e;
+	border-color: #00693e;
+}
+
 .container {
 	height: auto;
 	width: 80%;
