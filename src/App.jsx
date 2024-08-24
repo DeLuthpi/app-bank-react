@@ -8,7 +8,6 @@ function App() {
 	const element = useRoutes(routeList);
 	const theme = useSelector(state => state.theme.darkMode);
 	theme ? document.body.classList.add("dark-mode") : document.body.classList.remove("dark-mode");
-	console.log(theme);
 	
 	return element;
 }
