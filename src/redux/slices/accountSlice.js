@@ -3,14 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 const accountSlice = createSlice({
 	name: "account",
 	initialState: {
-		tabungan: 0,
+		saldo: 0,
 	},
 	reducers: {
 		deposit(state, action) {
-			state.tabungan += action.payload;
+			state.saldo += action.payload;
 		},
 		withdraw(state, action) {
-			state.tabungan -= action.payload;
+			state.saldo -= action.payload;
 		},
 	},
 });

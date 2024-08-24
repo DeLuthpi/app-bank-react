@@ -1,0 +1,102 @@
+.sidebar {
+	width: 20%;
+	height: 80vh;
+	background-color: #fff;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+	margin-top: 0;
+}
+
+.nav-list {
+	flex-direction: column;
+	display: flex;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0.5rem;
+	list-style: none;
+}
+
+.nav-item {
+	margin-top: 0.125rem;
+	width: 100%;
+}
+
+.nav-link {
+	padding-top: 0.675rem;
+	padding-bottom: 0.675rem;
+	margin: 0 0.5rem;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-weight: 400;
+	color: #67748e;
+	font-size: 0.875rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link.active {
+	color: #344767;
+	background-color: #e5e4e2;
+	font-weight: 600;
+	box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+	color: #344767;
+	background-color: #e5e4e2;
+	font-weight: 600;
+	box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 0.5rem;
+	transition-duration: 500ms;
+}
+
+.nav-link.active .icon {
+	background-image: linear-gradient(310deg, #344767 0%, #344767 100%);
+}
+
+.nav-link:hover .icon {
+	background-image: linear-gradient(310deg, #344767 0%, #344767 100%);
+	transition-duration: 500ms;
+}
+
+.nav-link .icon {
+	padding: 10px;
+}
+
+.icon-page {
+	border-radius: 0.5rem;
+	background-position: center;
+	box-shadow: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.12);
+	background-color: #fff;
+	text-align: center;
+	margin-right: 0.25rem;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-item > .nav-link.active .icon svg path {
+	fill: #fff;
+}
+
+.nav-item > .nav-link .icon svg path {
+	fill: #3a416f;
+}
+
+.nav-item:hover > .nav-link .icon svg path {
+	fill: #fff;
+	transition-duration: 500ms;
+}
+
+.nav-link .nav-link-text {
+	pointer-events: none;
+	transition: 0.3s ease;
+	opacity: 1;
+	margin-left: 0.25rem;
+}
