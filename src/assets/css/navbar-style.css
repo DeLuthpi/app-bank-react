@@ -12,6 +12,10 @@
 	margin-bottom: 0.5rem;
 }
 
+.dark-mode .navbar {
+	background-color: #111322;
+}
+
 .icon-theme {
 	cursor: pointer;
 }

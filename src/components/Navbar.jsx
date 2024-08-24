@@ -11,7 +11,7 @@ const Navbar = () => {
 	const handleLight = () => dispatch(themeLight());
 
 	return (
-		<nav className='navbar'>
+		<nav className="navbar">
 			<div className="nav-logo">
 				<Link to='/'><h2>Bank Bung&ensp;<FontAwesomeIcon icon="fa-solid fa-bug" /></h2></Link>
 			</div>

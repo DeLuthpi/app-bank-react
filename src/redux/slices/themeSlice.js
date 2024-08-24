@@ -8,11 +8,9 @@ const themeSlice = createSlice({
 	reducers: {
 		themeDark(state) {
 			state.darkMode = true;
-			document.body.classList.add("dark-mode");
 		},
 		themeLight(state) {
 			state.darkMode = false;
-			document.body.classList.remove("dark-mode");
 		},
 	},
 });
