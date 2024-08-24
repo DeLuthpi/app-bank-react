@@ -1,8 +1,10 @@
-# React + Vite
+# App Bank using React.js Framework
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+simple bank application using react js and redux. in this application there is a deposit menu, withdraw and also change pin
 
-Currently, two official plugins are available:
+To use this application, please follow these steps :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
