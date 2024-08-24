@@ -1,5 +1,6 @@
 import Home from "../pages/Home"
 import Deposit from "../pages/Deposit"
+import Withdraw from "../pages/Withdraw"
 
 export const routeList = [
 	{
@@ -13,5 +14,9 @@ export const routeList = [
 	{
 		path: "/deposit",
 		element: <Deposit />
+	},
+	{
+		path: "/withdraw",
+		element: <Withdraw />
 	},
 ];

@@ -1,0 +1,46 @@
+.form-transaction {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	width: 100%;
+}
+
+.title-form {
+	margin: 0.5rem 0;
+}
+
+.btn-deposit {
+	color: #fff;
+	font-weight: 700;
+	border-color: #50c878;
+	background-color: #50c878;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.btn-deposit:hover {
+	color: #fff;
+	background-color: #00693e;
+	border-color: #00693e;
+}
+
+.btn-withdraw {
+	color: #fff;
+	font-weight: 700;
+	border-color: #b31b1b;
+	background-color: #b31b1b;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.btn-withdraw:hover {
+	color: #fff;
+	background-color: #8b0000;
+	border-color: #8b0000;
+}
