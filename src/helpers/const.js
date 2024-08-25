@@ -1,3 +1,5 @@
+import iconMcard from "../assets/images/m-card.png";
+
 const sidebarMenu = [
 	{
 		id: 1,
@@ -25,4 +27,4 @@ const sidebarMenu = [
 	},
 ];
 
-export { sidebarMenu };
+export { sidebarMenu, iconMcard };

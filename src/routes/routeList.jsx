@@ -1,22 +1,22 @@
-import Home from "../pages/Home"
-import Deposit from "../pages/Deposit"
-import Withdraw from "../pages/Withdraw"
+import Home from "../pages/Home";
+import Deposit from "../pages/Deposit";
+import Withdraw from "../pages/Withdraw";
 
 export const routeList = [
 	{
 		path: "/",
-		element: <Home />
+		element: <Home />,
 	},
 	{
 		path: "/home",
-		element: <Home />
+		element: <Home />,
 	},
 	{
 		path: "/deposit",
-		element: <Deposit />
+		element: <Deposit />,
 	},
 	{
 		path: "/withdraw",
-		element: <Withdraw />
+		element: <Withdraw />,
 	},
 ];

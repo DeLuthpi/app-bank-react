@@ -1,6 +1,6 @@
 .sidebar {
-	width: 20%;
-	height: 80vh;
+	width: 100%;
+	max-width: 15.625rem;
 	background-color: #fff;
 	border-radius: 1rem;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

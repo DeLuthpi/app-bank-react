@@ -1,12 +1,12 @@
-import '../assets/css/sidebar-style.css';
-import { Link, useNavigate } from 'react-router-dom';
+import "../assets/css/sidebar-style.css";
+import { Link, useNavigate } from "react-router-dom";
 import { sidebarMenu } from "../helpers/const";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useSelector, useDispatch } from 'react-redux';
-import { menuActive } from "../redux/slices/menuSlice"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useSelector, useDispatch } from "react-redux";
+import { menuActive } from "../redux/slices/menuSlice";
 
 const Sidebar = () => {
-	const isActive = useSelector(state => state.menu.pageActive);
+	const isActive = useSelector((state) => state.menu.pageActive);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const handleActive = (e) => {
@@ -14,7 +14,7 @@ const Sidebar = () => {
 		const path = e.target.pathname;
 		dispatch(menuActive(path));
 		navigate(e.target.pathname);
-	}
+	};
 
 	return (
 		<aside className="sidebar">
@@ -30,7 +30,7 @@ const Sidebar = () => {
 									<span className="nav-link-text ms-1">{list?.navName}</span>
 								</Link>
 							</li>
-						)
+						);
 					})}
 				</ul>
 			</div>
