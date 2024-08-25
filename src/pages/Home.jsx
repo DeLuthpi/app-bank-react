@@ -6,6 +6,7 @@ import { iconMcard } from "../helpers/const";
 
 const Home = () => {
 	const saldo = useSelector((state) => state.account.saldo);
+	const transactions = useSelector((state) => state.account.transactions);
 
 	return (
 		<div className="container">
@@ -23,7 +24,28 @@ const Home = () => {
 						<img src={iconMcard} className="mcard-img" alt="m-card image" />
 					</div>
 					<h3>Riwayat Transaksi :</h3>
-					<p className="main-desc">Tidak ada riwayat transaksi</p>
+					<div className="main-transaction">
+						{transactions.length === 0 ? (
+							<p className="main-desc">Belum ada riwayat transaksi</p>
+						) : (
+							transactions
+								.map((list) => {
+									return (
+										<div key={list?.id} className="transaction-history">
+											<p className="transaction-date">{list?.date}</p>
+											<div className="transaction-type">
+												<div className={`${list?.type === "Deposit" ? "trx-type deposit" : "trx-type withdraw"}`}>{list?.type}</div>
+												<div className={`${list?.type === "Deposit" ? "trx-amount deposit" : "trx-amount withdraw"}`}>
+													<CurrencyFormat value={list?.amount} displayType={"text"} thousandSeparator={true} decimalSeparator="." thousandSpacing="3" prefix={"Rp. "} />
+													.00,-
+												</div>
+											</div>
+										</div>
+									);
+								})
+								.reverse()
+						)}
+					</div>
 				</div>
 			</div>
 		</div>

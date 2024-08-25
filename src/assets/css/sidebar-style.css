@@ -1,4 +1,6 @@
 .sidebar {
+	--ms-margin: 160px;
+	height: calc(100vh - var(--ms-margin));
 	width: 100%;
 	max-width: 15.625rem;
 	background-color: #fff;
