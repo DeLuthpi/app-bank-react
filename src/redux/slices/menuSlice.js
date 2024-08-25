@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const menuSlice = createSlice({
 	name: "page",
 	initialState: {
-		pageActive: "home",
+		pageActive: "/home",
 	},
 	reducers: {
 		menuActive(state, action) {
