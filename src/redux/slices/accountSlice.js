@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const datetime = new Date().toDateString() + " " + new Date().toLocaleTimeString();
-
 const accountSlice = createSlice({
 	name: "account",
 	initialState: {
@@ -12,11 +10,11 @@ const accountSlice = createSlice({
 	reducers: {
 		deposit(state, action) {
 			state.saldo += action.payload;
-			state.transactions.push({ id: state.id++, type: "Deposit", date: datetime, amount: action.payload });
+			state.transactions.push({ id: state.id++, type: "Deposit", date: new Date().toDateString() + " " + new Date().toLocaleTimeString(), amount: action.payload });
 		},
 		withdraw(state, action) {
 			state.saldo -= action.payload;
-			state.transactions.push({ id: state.id++, type: "Withdraw", date: datetime, amount: action.payload });
+			state.transactions.push({ id: state.id++, type: "Withdraw", date: new Date().toDateString() + " " + new Date().toLocaleTimeString(), amount: action.payload });
 		},
 	},
 });

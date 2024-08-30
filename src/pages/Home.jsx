@@ -36,8 +36,7 @@ const Home = () => {
 											<div className="transaction-type">
 												<div className={`${list?.type === "Deposit" ? "trx-type deposit" : "trx-type withdraw"}`}>{list?.type}</div>
 												<div className={`${list?.type === "Deposit" ? "trx-amount deposit" : "trx-amount withdraw"}`}>
-													<CurrencyFormat value={list?.amount} displayType={"text"} thousandSeparator={true} decimalSeparator="." thousandSpacing="3" prefix={"Rp. "} />
-													.00,-
+													<CurrencyFormat value={list?.amount} displayType={"text"} thousandSeparator={true} thousandSpacing="3" prefix={"Rp. "} suffix=".00,-" />
 												</div>
 											</div>
 										</div>

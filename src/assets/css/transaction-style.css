@@ -1,14 +1,14 @@
 .form-transaction {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: left;
-	align-items: left;
 	width: 100%;
 }
 
 .title-form {
-	margin: 1rem 0;
+	margin: 1rem 0 0.5rem;
+}
+
+.input-form {
+	--margin: 100px;
+	width: calc(50% - var(--margin));
 }
 
 .btn-deposit {
@@ -20,6 +20,7 @@
 	padding: 0.75rem;
 	cursor: pointer;
 	margin-left: 10px;
+	width: 100px;
 }
 
 .btn-deposit:hover {
@@ -37,10 +38,56 @@
 	padding: 0.75rem;
 	cursor: pointer;
 	margin-left: 10px;
+	width: 100px;
 }
 
 .btn-withdraw:hover {
 	color: #fff;
 	background-color: #8b0000;
 	border-color: #8b0000;
+}
+
+.amount-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 1rem;
+	list-style: none;
+	justify-content: flex-start;
+	gap: 0.5rem;
+}
+
+.amount-item {
+	padding: 0.5rem;
+	border: 1px solid #dee2e6;
+	width: 80px;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #344767;
+}
+
+.dark-mode .amount-item {
+	color: #dee2e6;
+}
+
+.dark-mode .amount-item:hover {
+	color: #344767;
+}
+
+.amount-item:hover {
+	background-color: #dee2e6;
+	color: #344767;
+}
+
+.amount-item.active {
+	background-color: #dee2e6;
+	color: #344767;
+}
+
+fieldset {
+	border-radius: 0.5rem;
 }

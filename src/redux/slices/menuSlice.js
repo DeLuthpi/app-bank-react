@@ -4,6 +4,7 @@ const menuSlice = createSlice({
 	name: "page",
 	initialState: {
 		pageActive: "/home",
+		// pageActive: window.location.pathname,
 	},
 	reducers: {
 		menuActive(state, action) {
