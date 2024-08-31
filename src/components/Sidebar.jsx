@@ -6,7 +6,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { menuActive } from "../redux/slices/menuSlice";
 
 const Sidebar = () => {
-	const isActive = useSelector((state) => state.menu.pageActive);
+	let pageActive = useSelector((state) => state.menu.pageActive);
+	pageActive === "/" ? (pageActive = "/home") : pageActive;
+
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const handleActive = (e) => {
@@ -23,7 +25,7 @@ const Sidebar = () => {
 					{sidebarMenu?.map((list) => {
 						return (
 							<li className="nav-item" key={list?.id}>
-								<Link className={`nav-link ${isActive === list?.navRoute ? "active" : ""}`} to={list?.navRoute} onClick={handleActive}>
+								<Link className={`nav-link ${pageActive === list?.navRoute ? "active" : ""}`} to={list?.navRoute} onClick={handleActive}>
 									<div className="icon icon-page">
 										<FontAwesomeIcon icon={list?.navIcon} />
 									</div>
