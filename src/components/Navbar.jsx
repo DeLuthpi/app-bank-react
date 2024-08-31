@@ -20,8 +20,11 @@ const Navbar = () => {
 				<img src={logoImage} className="logo-img" alt="logo-img" />
 			</div>
 			<div className="nav-theme">
-				<span>Theme</span>&ensp;
-				<FontAwesomeIcon className="icon-theme" onClick={theme ? handleLight : handleDark} icon={theme ? "fa-solid fa-moon" : "fa-solid fa-sun"} />
+				<input type="checkbox" id="switch" className="checkbox" defaultChecked={theme ? true : false} onClick={theme ? handleLight : handleDark} />
+				<label htmlFor="switch" className="toggle">
+					<FontAwesomeIcon icon="fa-solid fa-sun" className="icon-light" inverse />
+					<FontAwesomeIcon icon="fa-solid fa-moon" className="icon-dark" inverse />
+				</label>
 			</div>
 		</nav>
 	);
